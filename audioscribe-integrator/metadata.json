@@ -1,0 +1,6 @@
+{
+  "name": "AudioScribe Integrator",
+  "description": "A comprehensive guide and prototyping tool for integrating Google Cloud Storage and Speech-to-Text with WordPress. Features risk analysis, architecture visualization, and a Gemini-powered transcription prototype.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
