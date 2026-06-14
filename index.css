@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Inter:wght@300;400;500;600;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --brand-blue: #1A2B56;
+    --brand-blue-light: #243b75;
+    --brand-amber: #F9B437;
+    --brand-red: #7C2B22;
+    --brand-red-dark: #5e211a;
+    --app-bg: #1A2B56;
+    --app-text: #ffffff;
+    --app-border: rgba(255, 255, 255, .1);
+  }
+  .light-theme {
+    --brand-blue: #1A2B56;
+    --brand-blue-light: #f3f4f6;
+    --brand-amber: #d97706;
+    --brand-red: #7C2B22;
+    --brand-red-dark: #5e211a;
+    --app-bg: #ffffff;
+    --app-text: #111827;
+    --app-border: rgba(0, 0, 0, .1);
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .custom-scroll::-webkit-scrollbar {
+    width: 6px;
+  }
+  .custom-scroll::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+  }
+  .custom-scroll::-webkit-scrollbar-thumb {
+    background: rgba(249, 180, 55, 0.2);
+    border-radius: 10px;
+  }
+  .custom-scroll::-webkit-scrollbar-thumb:hover {
+    background: rgba(249, 180, 55, 0.5);
+  }
+}
